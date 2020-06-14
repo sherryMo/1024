@@ -73,6 +73,11 @@ for (char ch: tmp.toCharArray()) {
    map[ch - 'a']++;
 }
 
+//HashMap sort by value solution
+List<Map.Entry<Integer, Integer> > list = new LinkedList<>(map.entrySet());   
+// Sort the list 
+int count = 0;
+Collections.sort(list, (a, b) -> a.getValue()-b.getValue());
 
 ```
 ## Pair:
